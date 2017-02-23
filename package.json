@@ -8,6 +8,5 @@
     },
     "author": "malaohu",
     "dependencies": {
-        "http-proxy":"*"
     }
 }
