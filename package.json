@@ -1,0 +1,13 @@
+{
+    "name": "http(s) proxy",
+    "version": "0.0.1",
+    "description": "http(s)代理程序",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "author": "malaohu",
+    "dependencies": {
+        "proxy":"*",
+    }
+}
