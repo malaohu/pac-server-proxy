@@ -34,7 +34,6 @@ var getPath = function (req) {
 var counter = 0;
 var onProxy = function (req, res) {
   counter++;
-  console.log(req)
   var num = counter;
   var opt = {
     host:     req.headers.host,
