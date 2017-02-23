@@ -7,4 +7,8 @@ server.listen(25, function () {
     console.log('HTTP(s) proxy server listening on port %d', port);
 });*/
 
-http.createServer(function(req,res){res.write('this is test');res.end();}).listen(8080);
+http.createServer(function(req,res){
+ res.writeHead(200, {"content-type" : "text/plain"});
+	res.write("hello world");	
+	res.end();
+}).listen(80);
