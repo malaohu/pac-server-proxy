@@ -1,8 +1,4 @@
 var http = require('http');
-var setup = require('proxy');
+var httpProxy = require('http-proxy');
  
-var server = setup(http.createServer());
-server.listen((process.env.PORT||8088, function () {
-    var port = server.address().port;
-    console.log('HTTP(s) proxy server listening on port %d', port);
-});
+httpProxy.createProxyServer({}).listen(process.env.PORT||8088);
